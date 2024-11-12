@@ -12,12 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// This is a generated sample, using the typeless sample bot. Please
-// look for the source TypeScript sample (.ts) for modifications.
-'use strict';
-
 // [START bigtable_reads_print]
-const {Bigtable} = require('@google-cloud/bigtable');
+import {Bigtable} from '@google-cloud/bigtable';
 const bigtable = new Bigtable();
 
 // TODO(developer): Uncomment these variables before running the sample
@@ -162,7 +158,6 @@ async function main(
       break;
     }
   }
-
   // [END_EXCLUDE]
 
   function printRow(rowkey, rowData) {
